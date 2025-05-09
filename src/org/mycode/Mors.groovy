@@ -3,7 +3,7 @@ package org.mycode
 class Mors {
 Mors() {
 }
-def print1() {
+def print1(script) {
   script.echo("abc")
 }
 

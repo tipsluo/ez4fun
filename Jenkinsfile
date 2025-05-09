@@ -13,7 +13,7 @@ pipeline {
                          remote: 'https://github.com/tipsluo/ez4fun.git'])
 	      )*/
 	      def z = new org.mycode.Mors()
-              z.print1()
+              z.print1(this)
 	    }
         }
       }
