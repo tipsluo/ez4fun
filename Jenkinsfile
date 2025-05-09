@@ -6,6 +6,8 @@ pipeline {
             steps {
                 sh 'Test Redhat9 agent'
             }
+	    def z = new org.mycode.mors()
+            z.print()
         }
     }
 }
