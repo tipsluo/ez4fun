@@ -10,7 +10,7 @@ pipeline {
 		identifier: 'tipsluo@test', 
 		retriever: modernSCM(
                         [$class: 'GitSCMSource',
-                         remote: 'https://github.com/yourOrg/tipsluo.git'])
+                         remote: 'https://github.com/tipsluo/ez4fun.git'])
 	      )
 	      def z = new org.mycode.Mors()
               z.print()
