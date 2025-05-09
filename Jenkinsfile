@@ -4,6 +4,7 @@ pipeline {
     agent any
     stages {
         stage('build') {
+          steps{
 	    script {
 	      /*library(
 		identifier: 'tipsluo@test', 
@@ -15,5 +16,6 @@ pipeline {
               z.print1()
 	    }
         }
+      }
     }
 }
