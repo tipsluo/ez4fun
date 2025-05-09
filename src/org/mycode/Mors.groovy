@@ -7,6 +7,6 @@ def checkOutFrom(repo) {
 }
 
 def print() {
-  print "abc"
+  out.println("abc")
 }
 }

@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'Test Redhat9 agent'
+                sh 'echo Test Redhat9 agent'
 	    script {
 	      /*library(
 		identifier: 'tipsluo@test', 
