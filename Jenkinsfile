@@ -7,9 +7,9 @@ pipeline {
                 sh 'Test Redhat9 agent'
             }
 	    script {
-	      library identifier: 'mylib@test', retriever: modernSCM(
+	      library identifier: 'tipsluo@test', retriever: modernSCM(
                         [$class: 'GitSCMSource',
-                         remote: scm.userRemoteConfigs[0].url])
+                         remote: 'https://github.com/yourOrg/tipsluo.git'])
 	      def z = new org.mycode.Mors()
               z.print()
             }
