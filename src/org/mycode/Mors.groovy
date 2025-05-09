@@ -4,7 +4,7 @@ class Mors {
 Mors() {
 }
 def print1() {
-  System.out.println("abc")
+  script.echo("abc")
 }
 
 }
