@@ -1,4 +1,6 @@
 /* Requires the Docker Pipeline plugin */
+@Library('ez4fun')
+import org.mycode.*
 pipeline {
     agent any
     stages {
@@ -12,8 +14,7 @@ pipeline {
                         [$class: 'GitSCMSource',
                          remote: 'https://github.com/tipsluo/ez4fun.git'])
 	      )*/
-              @Library('ez4fun')
-	      def z = new org.mycode.Mors()
+	      def z = new Mors()
               z.print()
 	    }
             }
